@@ -136,7 +136,7 @@ $ npm install
 ```.env
 NODE_ENV="production"
 ```
--Back to terminal
+- Back to terminal
 
 ```bash
 # Run database migrations.
@@ -155,7 +155,7 @@ $ yarn start
 $ npm start
 ```
 
-### Builded project it´s now available at folder `./dist`.
+- Builded project it´s now available at folder `./dist`.
 
 ## 👷‍♀️ How to test
 
@@ -179,7 +179,7 @@ $ yarn test
 $ npm run test
 ```
 
-## 🚧 How to run as a service with Docker
+## 🐳 How to run as a service with Docker
 
 - You will need to have Node installed at your computer.
 You can download [here](https://nodejs.org/en/)
@@ -195,8 +195,7 @@ Clone this repository.
 # Run to start the project in production mode.
 $ docker-compose up -d
 ```
-
-### Now the API it's available at `http://localhost:3000`.
+- Now the API it's available at `http://localhost:3000`.
 
 ## 💎 To Be Published
 
