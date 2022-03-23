@@ -102,9 +102,7 @@ You can download [here](https://nodejs.org/en/)
 
 - You will need to have some package manager installed at your computer too. (npm, yarn)
 
-- Then clone this repository.
-
-- On You project folder, open the CLI and type:
+- On You project folder, open the command line and type:
 
 ```bash
 # Run to install dependencies.
@@ -125,7 +123,7 @@ $ npm run dev
 
 ## 🚧 How to build
 
-- Then clone this repository.
+- Open command line on the project folder.
 
 ```bash
 # Run to install dependencies.
@@ -166,8 +164,6 @@ You can download [here](https://nodejs.org/en/)
 
 - You will need to have some package manager installed at your computer. (npm, yarn)
 
-- Then clone this repository.
-
 - On You project folder, open the CLI and type:
 ```bash
 # Run to install dependencies.
@@ -191,11 +187,11 @@ You can download [here](https://nodejs.org/en/)
 - You will need to have Docker installed at your computer and it need to be running.
 You can download [here](https://docs.docker.com/desktop/windows/install/)
 
-- Then clone this repository.
+- Then open command line on the project folder.
 
 ```bash
 
-# Run to start the project in production mode.
+# Run to start the docker's image build and container starting.
 $ docker-compose up -d
 ```
 - Await the process on the command line to end.
