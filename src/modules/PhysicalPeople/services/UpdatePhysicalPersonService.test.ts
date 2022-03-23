@@ -28,7 +28,7 @@ describe('UpdatePhysicalPersonService', () => {
     await fakePhysicalPeopleRepository.save(person);
 
     await updatePhysicalPersonService.execute({
-      id: person.id,
+      cpf: person.cpf,
       is_blacklisted: true,
     });
 
@@ -46,7 +46,7 @@ describe('UpdatePhysicalPersonService', () => {
     await fakePhysicalPeopleRepository.save(person);
 
     await updatePhysicalPersonService.execute({
-      id: person.id,
+      cpf: person.cpf,
       is_blacklisted: false,
     });
 
@@ -57,7 +57,7 @@ describe('UpdatePhysicalPersonService', () => {
   it('Should not be able to update physical persons with inexistent ID', async () => {
     await expect(
       updatePhysicalPersonService.execute({
-        id: uuid(),
+        cpf: '838.497.779-87',
         is_blacklisted: false,
       }),
     ).rejects.toBeInstanceOf(AppError);

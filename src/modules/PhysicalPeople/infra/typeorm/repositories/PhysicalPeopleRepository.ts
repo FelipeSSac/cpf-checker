@@ -32,7 +32,7 @@ class PhysicalPeopleRepository implements IPhysicalPeopleRepository {
 
     const [physicalPeople, total] = await builder
       .skip((page - 1) * limit)
-      .limit(limit)
+      .take(limit)
       .getManyAndCount();
 
     return {

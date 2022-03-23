@@ -21,7 +21,7 @@ physicalPeopleRouter.post(
 );
 
 physicalPeopleRouter.put(
-  '/:id',
+  '/:cpf',
   update,
   physicalPeopleController.update,
 );

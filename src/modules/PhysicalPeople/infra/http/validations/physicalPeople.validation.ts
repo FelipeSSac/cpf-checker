@@ -18,7 +18,7 @@ export const create = celebrate({
 
 export const update = celebrate({
   [Segments.PARAMS]: {
-    id: Joi.string().uuid().required(),
+    cpf: JoiDocument.document().cpf().required(),
   },
   [Segments.BODY]: {
     is_blacklisted: Joi.boolean().required(),

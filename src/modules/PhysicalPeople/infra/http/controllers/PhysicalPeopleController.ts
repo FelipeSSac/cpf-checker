@@ -12,16 +12,16 @@ class PhysicalPeopleController {
       page,
       limit,
       is_blacklisted,
-    } = request.params;
+    } = request.query;
 
     const indexPhysicalPeopleService = container.resolve(
       IndexPhysicalPeopleService,
     );
 
     const physicalPeople = await indexPhysicalPeopleService.execute({
-      page: Number(page) || undefined,
-      limit: Number(limit) || undefined,
-      is_blacklisted: Boolean(is_blacklisted) || undefined,
+      page: page ? Number(page) : undefined,
+      limit: limit ? Number(limit) : undefined,
+      is_blacklisted: is_blacklisted ? Boolean(is_blacklisted) : undefined,
     });
 
     return response.status(200).json(physicalPeople);
@@ -66,14 +66,14 @@ class PhysicalPeopleController {
     const {
       is_blacklisted,
     } = request.body;
-    const { id } = request.params;
+    const { cpf } = request.params;
 
     const updatePhysicalPersonService = container.resolve(
       UpdatePhysicalPersonService,
     );
 
     const physicalPeople = await updatePhysicalPersonService.execute({
-      id,
+      cpf,
       is_blacklisted,
     });
 

@@ -5,7 +5,7 @@ import { IPhysicalPeopleRepository } from '../repositories/IPhysicalPeopleReposi
 import { IPhysicalPerson } from '../entities/PhysicalPerson';
 
 interface IRequest {
-  id: string;
+  cpf: string;
   is_blacklisted: boolean;
 }
 
@@ -17,10 +17,10 @@ class UpdatePhysicalPersonService {
   ) {}
 
   public async execute({
-    id,
+    cpf,
     is_blacklisted,
   }: IRequest): Promise<IPhysicalPerson> {
-    const physicalPersonExits = await this.physicalPeopleRepository.findById(id);
+    const physicalPersonExits = await this.physicalPeopleRepository.findByCPF(cpf);
 
     if (!physicalPersonExits) {
       throw new AppError('CPF não encontrado!', 404);
