@@ -130,7 +130,15 @@ Clone this repository.
 $ yarn
 # or
 $ npm install
+```
+- You must change .env file to production mode.
 
+```.env
+NODE_ENV="production"
+```
+-Back to terminal
+
+```bash
 # Run database migrations.
 $ yarn typeorm migration:run
 # or
@@ -147,7 +155,7 @@ $ yarn start
 $ npm start
 ```
 
-# Builded project it´s now available at folder `./dist`.
+### Builded project it´s now available at folder `./dist`.
 
 ## 👷‍♀️ How to test
 
@@ -188,7 +196,7 @@ Clone this repository.
 $ docker-compose up -d
 ```
 
-# Now the API it's available at `http://localhost:3000`.
+### Now the API it's available at `http://localhost:3000`.
 
 ## 💎 To Be Published
 
