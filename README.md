@@ -105,6 +105,7 @@ You can download [here](https://nodejs.org/en/)
 - Then clone this repository.
 
 - On You project folder, open the CLI and type:
+
 ```bash
 # Run to install dependencies.
 $ yarn
@@ -124,7 +125,8 @@ $ npm run dev
 
 ## 🚧 How to build
 
-Clone this repository.
+- Then clone this repository.
+
 ```bash
 # Run to install dependencies.
 $ yarn
@@ -189,12 +191,15 @@ You can download [here](https://nodejs.org/en/)
 - You will need to have Docker installed at your computer and it need to be running.
 You can download [here](https://docs.docker.com/desktop/windows/install/)
 
-Clone this repository.
+- Then clone this repository.
+
 ```bash
 
 # Run to start the project in production mode.
 $ docker-compose up -d
 ```
+- Await the process on the command line to end.
+
 - Now the API it's available at `http://localhost:3000`.
 
 ## 💎 To Be Published
